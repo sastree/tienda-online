@@ -1,0 +1,37 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Targeta from "../../components/Targeta.astro";
+import Tienda from "../../layouts/Tienda.astro";
+---
+<Layout>
+    <div class="titulo">
+        <h1>Hortalizas</h1>
+    </div>
+    <Tienda>
+        <Targeta img="https://entresemillas.com/2286-home_default/pimiento-verde-italiano-semillas.jpg" nombre="Pimiento Verde Italiano - Semillas" precio="1,99 €" />
+        <Targeta img="https://entresemillas.com/2283-home_default/nabo-de-mesa-bola-nieve-semillas.jpg" nombre="Nabo de mesa Bola de Nieve - semillas" precio="1,99 €" />
+        <Targeta img="https://entresemillas.com/3355-home_default/pimiento-dulce-california.jpg" nombre="Pimiento Dulce California - 90 semillas" precio="1,99 €" />
+        <Targeta img="https://entresemillas.com/1416-home_default/cucamelon-melothria-scabra-semillas.jpg" nombre="Cucamelón - Semillas" precio="2,35 €" />
+        <Targeta img="https://entresemillas.com/2072-home_default/lulo-sobre-8-semillas.jpg" nombre="Lulo - 20 semillas" precio="2,35 €" />
+        <Targeta img="https://entresemillas.com/2618-home_default/tomate-marmande.jpg" nombre="Tomate Marmande - 120 semillas" precio="1,99 €" />
+        <Targeta img="https://entresemillas.com/2082-home_default/jicama.jpg" nombre="Jicama - 8 semillas" precio="2,99 €" />
+        <Targeta img="https://entresemillas.com/1459-home_default/hinojo-semillas.jpg" nombre="Hinojo, Dulce de Florencia - 100 semillas" precio="2,35 €" />
+        <Targeta img="https://entresemillas.com/3922-home_default/physalis-peruviana-uchuva.jpg" nombre="Physalis peruviana / Uchuva - 50 semillas" precio="1,99 €" />
+        <Targeta img="https://entresemillas.com/2160-home_default/remolacha.jpg" nombre="Remolacha - 120 semillas" precio="1,99 €" />
+    </Tienda>
+</Layout>
+
+<style>
+    h1 {
+        text-align: center;
+        padding-top: 10px;
+        font-size: 70px;
+        font-family: 'Dancing Script', cursive;
+    }
+    .titulo {
+        width: 100%;
+        height: auto;
+        background: url("https://entresemillas.com/img/madera1.jpg");
+        font-family: 'Dancing Script', cursive;
+    }
+</style>

@@ -1,0 +1,32 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Targeta from "../../components/Targeta.astro";
+import Tienda from "../../layouts/Tienda.astro";
+---
+<Layout>
+    <div class="titulo">
+        <h1>Cactus</h1>
+    </div>
+    <Tienda>
+        <Targeta img="https://entresemillas.com/2137-home_default/echinocactus-grusonii-semillas.jpg" nombre="Echinocactus grusonii - 8 semillas" precio="2,49 €" />
+        <Targeta img="https://entresemillas.com/2136-home_default/astrophytum-myriostigma-semillas.jpg" nombre="Astrophytum myriostigma - 10 semillas" precio="2,35 €" />
+        <Targeta img="https://entresemillas.com/1316-home_default/cactus-san-pedro-semillas.jpg" nombre="Cactus de San Pedro - 8 semillas" precio="2,49 €" />
+        <Targeta img="https://entresemillas.com/3576-home_default/stapelia-leendertziae-semillas.jpg" nombre="Stapelia leendertziae - 10 semillas" precio="2,99 €" />
+        <Targeta img="https://entresemillas.com/2135-home_default/acanthocalycium-klimpelianum-semillas.jpg" nombre="Acanthocalycium klimpelianum - 10 semillas" precio="2,45 €" />
+
+</Layout>
+
+<style>
+    h1 {
+        text-align: center;
+        padding-top: 10px;
+        font-size: 70px;
+        font-family: 'Dancing Script', cursive;
+    }
+    .titulo {
+        width: 100%;
+        height: auto;
+        background: url("https://entresemillas.com/img/madera1.jpg");
+        font-family: 'Dancing Script', cursive;
+    }
+</style>

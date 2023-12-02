@@ -1,0 +1,67 @@
+---
+
+---
+
+<div class="pie">
+    <!-- html del Footer -->
+    <div class="social">
+        <a href="https://github.com/sastree" target="_blank"><i class="ri-github-fill"></i></a>
+        <a href="https://twitter.com/?lang=es" target="_blank"><i class="ri-twitter-fill"></i></a>
+        <a href="https://www.linkedin.com/in/alejandro-sastree/" target="_blank"><i class="ri-linkedin-fill"></i></a>
+        <a href="https://www.youtube.com" target="_blank"><i class="ri-youtube-fill"></i></a>
+    </div>
+    <h3>© Alejandro Sastre. 2023 All rights reserved</h3>
+</div>
+
+<style>
+    /*Contenedor principal*/
+    .pie {
+        width: 100%;
+        background: #668A4C;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 10vh;
+    }
+    /*Texto del pie de pagina*/
+    h3 {
+        text-align: center;
+        color: white;
+        font-size: 17px;
+        padding-right: 20px;
+    }
+    .social {
+        padding: 10px 10px;
+        padding-left: 20px;
+    }
+
+    .social i {
+        display: inline-block;
+        font-size: 25px;
+        margin-right: 15px;
+        transition: all ease 0.55s;
+        color: white;
+    }
+
+    .social i:hover {
+        transform: scale(1.08) translateY(-4px);
+    }
+    @media (max-width: 320px){
+	    .pie {
+            flex-direction: column;
+            height: auto;
+         }
+        h3 {
+         font-size: 14px;
+        }
+    }
+    @media (max-width: 590px){
+	    .pie {
+            flex-direction: column;
+            height: auto;
+         }
+        h3 {
+         padding-bottom: 10px;
+        }
+    }
+</style>

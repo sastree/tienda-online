@@ -1,0 +1,60 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+---
+
+<Layout>
+    <section class="carro">
+        <div class="comprado">
+           <h1 class="titulo">Tu carrito:</h1>
+           <hr>
+            <div class="contenedor">
+
+                <div class="izq">
+                    <h1>izq</h1>
+               </div>
+    
+               <div class="dere">
+                    <h1>dere</h1>
+               </div>
+
+            </div>
+           
+
+        </div>
+    </section>
+</Layout>
+
+<style>
+    .izq {
+        width: 50%;
+        text-align: center;
+    }
+    .dere {
+        width: 50%;
+        text-align: center;
+    }
+    .contenedor {
+        display: flex;
+    }
+    .titulo {
+        text-align: center;
+    }
+    .carro {
+        min-height: 80vh;
+        width: 100%;
+        background: url("https://entresemillas.com/img/madera1.jpg"); 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .comprado {
+        margin: 10px;
+        min-height: 70vh;
+        width: 50vw;
+        background: white;
+        border-radius: 1%;
+    }
+</style>

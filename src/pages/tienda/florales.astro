@@ -1,0 +1,36 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Targeta from "../../components/Targeta.astro";
+import Tienda from "../../layouts/Tienda.astro";
+---
+<Layout>
+    <div class="titulo">
+        <h1>Florales</h1>
+    </div>
+    <Tienda>
+        <Targeta img="https://entresemillas.com/1474-home_default/amapola-roja-sobre-100-semillas.jpg" nombre="Amapola Roja - 1000 semillas" precio="1,99 €" />
+        <Targeta img="https://entresemillas.com/1573-home_default/milenrama-sobre-200-semillas.jpg" nombre="Milenrama - 400 semillas" precio="2,35 €" />
+        <Targeta img="https://entresemillas.com/1373-home_default/flor-electrica-sechuan-button.jpg" nombre="FLOR ELÉCTRICA - 25 SEMILLAS" precio="2,35 €" />
+        <Targeta img="https://entresemillas.com/2079-home_default/calendula-sobre-50-semillas.jpg" nombre="Caléndula - 50 semillas" precio="2,35 €" />
+        <Targeta img="https://entresemillas.com/1532-home_default/hierba-de-san-juan-hiperico-sobre-200-semillas.jpg" nombre="Hierba de San Juan / Hipérico - 1000 semillas" precio="2,35 €" />
+        <Targeta img="https://entresemillas.com/1374-home_default/equinacea-angustifolia-sobre-25-semillas.jpg" nombre="Equinácea angustifolia - 50 semillas" precio="2,49 €" />
+        <Targeta img="https://entresemillas.com/996-home_default/lavanda-espliego-semillas.jpg" nombre="Lavanda - 200 semillas" precio="1,99 €" />
+        <Targeta img="https://entresemillas.com/1395-home_default/mimosa-sensitiva.jpg" nombre="Mimosa sensitiva - 25 semillas" precio="2,35 €" />
+        <Targeta img="https://entresemillas.com/1993-home_default/manzanilla-romana-sobre-100-semillas.jpg" nombre="Manzanilla romana - 400 semillas" precio="2,35 €" />
+        <Targeta img="https://entresemillas.com/533-home_default/azulejo-sobre-100-semillas.jpg" nombre="Azulejo Azul - 150 semillas" precio="1,99 €" />
+    </Tienda>
+</Layout>
+
+<style>
+    h1 {
+        text-align: center;
+        padding-top: 10px;
+        font-size: 70px;
+        font-family: 'Dancing Script', cursive;
+    }
+    .titulo {
+        width: 100%;
+        height: auto;
+        background: url("https://entresemillas.com/img/madera1.jpg");
+    }
+</style>
