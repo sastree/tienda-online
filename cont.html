@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
+    <style>
+        #contador {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100px;
+            margin: 20px;
+        }
+
+        #valor {
+            font-size: 24px;
+        }
+
+        .flecha {
+            cursor: pointer;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="contador">
+    <div id="decrementar" class="flecha" onclick="decrementar()">‹</div>
+    <div id="valor">0</div>
+    <div id="incrementar" class="flecha" onclick="incrementar()">›</div>
+</div>
+
+<script>
+    let valor = 0;
+    const elementoValor = document.getElementById('valor');
+
+    function incrementar() {
+        valor++;
+        actualizarValor();
+    }
+
+    function decrementar() {
+        valor--;
+        actualizarValor();
+    }
+
+    function actualizarValor() {
+        elementoValor.textContent = valor;
+    }
+</script>
+
+</body>
+</html>
