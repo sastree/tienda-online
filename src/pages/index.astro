@@ -1,12 +1,12 @@
 ---
 import Layout from "../layouts/Layout.astro";
 ---
-
+<!-- pagina de bienvenida (index) -->
 <Layout>
 	<html>
 
 			<section class="inicio">
-				<div class="texto">
+				<div class="texto"> <!-- bienvenida y nombre de la pagina -->
 					<h1 class="titulo">Bienvenido a Seeding!</h1>
 					<p>Tu tienda agraria online de confianza.</p>
 				</div>
@@ -15,7 +15,7 @@ import Layout from "../layouts/Layout.astro";
 				</div>
 			</section>
 
-			<section class="snap">
+			<section class="snap"> <!-- opciones para varios tipos de semillas -->
 				<div class="contenedor">
 					<a class="cuadro op1" href="tienda/arboles-frutales"><div>
 						<div class="error">
@@ -50,7 +50,7 @@ import Layout from "../layouts/Layout.astro";
 	html {
 		scroll-snap-type: y mandatory;
 	}
-	@keyframes bounce {
+	@keyframes bounce { /* animacion al entrar en la pagina o recargar */
       0%, 20%, 50%, 80%, 100% {
         transform: translateY(0);
       }
@@ -223,20 +223,6 @@ import Layout from "../layouts/Layout.astro";
 		.snap {
 			height: auto;
 		}
-}
-
-
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-   
-}
-
-@media only screen and (min-width: 1024px) {
-  
-}
-
-
-@media only screen and (min-width: 1200px) {
-    
 }
 
 </style>

@@ -3,12 +3,12 @@
 ---
 
 <div class="topnav">
-
+<!-- logo -->
     <a class="logo" href="/">Seeding</a>
-
+<!-- menu superior izquierda -->
     <div class="menu">
         <div class="dentroMenu">
-
+            <!-- menu desplegable de semillas -->
             <div class="dropdown">
                 <a href="#">Semillas</a>
                 <div class="dropdown-content">
@@ -23,11 +23,14 @@
             <a href="../carrito"><i class="ri-shopping-cart-line carro"></i></a> 
         </div>
     </div>
+    <!-- boton de menu de movil -->
     <div class="bx bx-menu" id="icono-menu"></div>
 </div>
+<!-- menu de movil -->
 <div id="menu-movil" class="menu-movil">
     <div class="menu-movil-item" id="semillas-item">
     <a href="/">Inicio</a>
+    <!-- desplegable de semillas del menu de movil -->
         <span id="semillas">Semillas</span>
         <div class="submenu">
             <hr>
@@ -42,6 +45,7 @@
     <a href="../carrito">Carrito</a>
     <div id="close-menu">&#10006;</div>
 </div>
+<!--script para el menu de movil en JavaScript -->
 <script lang="js">
     document.addEventListener("DOMContentLoaded", function () {
         var semillasItem = document.getElementById("semillas-item");
