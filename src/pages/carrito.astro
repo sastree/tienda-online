@@ -1,63 +1,22 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import TargetaCarro from "../components/TargetaCarro.astro";
 ---
 
 <Layout>
     <section class="carro">
-
-        <div class="productos">
+        <div class="carrito">
             <h1 class="cesta">CESTA</h1><hr>
+            <div class="productos">
+            
+                <TargetaCarro img="https://entresemillas.com/1993-home_default/manzanilla-romana-sobre-100-semillas.jpg" nombre="Manzanilla romana - 400 semillas" precio="2,35 €" />
+                <TargetaCarro img="https://entresemillas.com/2137-home_default/echinocactus-grusonii-semillas.jpg" nombre="Echinocactus grusonii - 8 semillas" precio="2,49 €" />
+                <TargetaCarro img="https://entresemillas.com/2286-home_default/pimiento-verde-italiano-semillas.jpg" nombre="Pimiento Verde Italiano - 20 semillas" precio="1,99 €" />
 
-            <div class="carrito">
-
-                <div class="semillas">
-
-                    <div class="foto">
-                        <img src="https://entresemillas.com/2137-home_default/echinocactus-grusonii-semillas.jpg" alt="">
-                    </div>
-                    <div class="info">
-                        <p>Echinocactus grusonii - 8 semillas</p>
-                        <p class="precio">2,49 €</p>
-                    </div>
-
-                    <div class="borrar">
-                        <i class="ri-delete-bin-7-fill"></i>
-                    </div>
-                </div>
-
-                <div class="semillas">
-
-                    <div class="foto">
-                        <img src="https://entresemillas.com/1573-home_default/milenrama-sobre-200-semillas.jpg" alt="">
-                    </div>
-                    <div class="info">
-                        <p>Milenrama - 400 semillas</p>
-                        <p class="precio">2,35 €</p>
-                    </div>
-
-                    <div class="borrar">
-                        <i class="ri-delete-bin-7-fill"></i>
-                    </div>
-                </div>
-
-                <div class="semillas">
-
-                    <div class="foto">
-                        <img src="https://entresemillas.com/2286-home_default/pimiento-verde-italiano-semillas.jpg" alt="">
-                    </div>
-                    <div class="info">
-                        <p>Pimiento Verde Italiano - Semillas</p>
-                        <p class="precio">1,99 €</p>
-                    </div>
-
-                    <div class="borrar">
-                        <i class="ri-delete-bin-7-fill"></i>
-                    </div>
-                </div>
-
-            </div>
+        </div>  
 
         </div>
+       
 
         <div class="pago">
             <p class="mt">3 artículos (6,83 €)</p><hr>
@@ -71,6 +30,12 @@ import Layout from "../layouts/Layout.astro";
 </Layout>
 
 <style>
+    * {
+        text-decoration: none;
+    }
+    .ri-delete-bin-7-fill {
+        cursor: pointer;
+    }
     .bn11 {
         display: inline-block;
         padding: 10px 20px;
@@ -93,56 +58,26 @@ import Layout from "../layouts/Layout.astro";
         margin-right: 20px;
         height: 100px;
         font-size: 20px;
-        cursor: pointer;
     }
-    .precio {
-        color:#F24236;
-        font-weight:800;
-    }
-    .foto {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100px;
-        width: 20%;
-        margin: 15px;
-    }
-    .info {
-        display: flex;
-        justify-content: center;
-        align-items: start;
-        flex-direction: column;
-        width: 40%;
-        height: 100px;
-    }
-
-    img {
-        max-width: 100%;
-        height: auto;
-        vertical-align: middle;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .semillas {
-        display: flex;
-        height: 15vh;
-        width: 100%;
-        margin-top: 20px;
-    }
+  
+ 
     .cesta {
         text-align: center;
     }
-    .productos {
-        background-color: white;
+    .carrito {
         height: 80vh;
         width: 40%;
+        background-color: white;
+        overflow: scroll;
     }
-    .carrito {
+    .productos {
+        background-color: white;
         display: flex;
-        justify-content: center;
         align-items: center;
-        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
     }
+   
     .pago {
         background-color: white;
         height: 80vh;
@@ -160,8 +95,38 @@ import Layout from "../layouts/Layout.astro";
     .pago {
         text-align: center;
     }
+      
+	@media (max-width: 768px){
+        .carro {
+            flex-direction: column;
+        }
+        .semillas {
+            display: flex;
+            height: auto;
+            width: 100%;
+            flex-direction: column;
 
+        
+        }
+        .carrito {
+            width: 90%;
+        }
+        .pago {
+            margin-top: 10px;
+            width: 90%;
+        }
 
+    @media (min-width: 768px) and (max-width: 1023px) {
+   
+    }
+
+    @media (min-width: 1024px) {
+  
+    }
+
+    @media (min-width: 1200px) {
+    
+    }
 
 
 </style>

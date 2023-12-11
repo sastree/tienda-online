@@ -63,6 +63,7 @@ import Layout from "../layouts/Layout.astro";
     }
 	.titulo {
 		animation: bounce 2s;
+		font-size: 65px;
 	}
 	.error {
 		height: 100px;
@@ -202,11 +203,40 @@ import Layout from "../layouts/Layout.astro";
 		flex-direction: column;
 	}
 
-	.inicio h1 {
-		font-size: 65px;
-	}
 	.inicio p {
 		font-size: 25px;
 	}
+
+
+	@media (max-width: 768px){
+		.titulo {
+			text-align: center;
+			font-size: 45px;
+		}
+		.inicio p {
+			text-align: center;
+			font-size: 20px;
+		}
+		.cuadro h1{
+			font-size: 30px;
+		}
+		.snap {
+			height: auto;
+		}
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+   
+}
+
+@media only screen and (min-width: 1024px) {
+  
+}
+
+
+@media only screen and (min-width: 1200px) {
+    
+}
 
 </style>
