@@ -2,8 +2,11 @@
 layout: "../layouts/Layoutmd.astro"
 css: "estilomd.css"
 ---
+
 # Acerca de Nosotros
+
 <br>
+
 ¡Bienvenido a **Seeding**!
 
 Somos más que una tienda de semillas, somos un refugio virtual para amantes de la naturaleza y apasionados de la jardinería. En **Seeding**, nos esforzamos por hacer que tu experiencia de cultivar y florecer sea tan satisfactoria como sea posible.
